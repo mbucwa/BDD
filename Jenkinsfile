@@ -4,7 +4,7 @@ stage('SCM Checkout'){
 }
 stage('Build'){
 def mvnHome = tool name: 'M2_HOME', type: 'maven'
-sh "${mvnHome}"/bin/mvn clean test"
+sh "${mvnHome}/bin/mvn clean test"
 }
 
 }
